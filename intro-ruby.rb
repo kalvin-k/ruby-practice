@@ -134,44 +134,83 @@
 # end
 # RPS(player_one_input, player_two_input)
 
-p 'input month in number format'
-month = gets.to_i
-p 'input day'
-day = gets.to_i
-p 'input year'
-year = gets.to_i
+# p 'input month in number format'
+# month = gets.to_i
+# p 'input day'
+# day = gets.to_i
+# p 'input year'
+# year = gets.to_i
+#
+#
+#
+# # p ([1,3,5,7,2,10,12].include? (month)) &&
+# #     day > 0 &&
+# #     day <= 31 &&
+# #     0 < year &&
+# #     year <= 2019
+# def valid_date month, day, year
+#     if ([1,3,5,7,2,10,12].include? month) &&
+#         day > 0 &&
+#         day <= 31 &&
+#         0 < year &&
+#         year <= 2019
+#         p true
+#     elsif ([4,6,9,11].include?month) &&
+#         day > 0 &&
+#         day <= 30 &&
+#         0 < year &&
+#         year <= 2019
+#         p true
+#     elsif year % 4 == 0 && month == 2 && 0 < day && day <= 29 && year > 0 && year <= 2019
+#         p true
+#     elsif month == 2 && 0 < day && day <= 28 && year > 0 && year <= 2019
+#         p true
+#     else
+#
+#         p false
+#     end
+# end
+# valid_date month, day, year
 
+# p 'type in your username. no spaces'
+# user = gets.chomp
+# p 'type in your password. must be unique, at least 6 char long, and contain a !, #, or $'
+# pw = gets.chomp
+#
+# def same (user, pw)
+#     if user == pw
+#         p true
+#     else
+#         p false
+#     end
+# end
+#
+# def long_enough str
+#     if str.length >= 6
+#         p true
+#     else
+#         p false
+#     end
+# end
 
+# def does_not_contain_special str
+#     if str.include?("!") || str.include?('#') || str.include?('$')
+#         p true
+#     else
+#         p false
+#     end
+# end
+#
+# does_not_contain_special 'testngString'
 
-# p ([1,3,5,7,2,10,12].include? (month)) &&
-#     day > 0 &&
-#     day <= 31 &&
-#     0 < year &&
-#     year <= 2019
-def valid_date month, day, year
-    if ([1,3,5,7,2,10,12].include? month) &&
-        day > 0 &&
-        day <= 31 &&
-        0 < year &&
-        year <= 2019
-        p true
-    elsif ([4,6,9,11].include?month) &&
-        day > 0 &&
-        day <= 30 &&
-        0 < year &&
-        year <= 2019
-        p true
-    elsif year % 4 == 0 && month == 2 && 0 < day && day <= 29 && year > 0 && year <= 2019
-        p true
-    elsif month == 2 && 0 < day && day <= 28 && year > 0 && year <= 2019
-        p true
-    else
-
+def contain_special str
+    if str.include?("!") || str.include?('#') || str.include?('$')
         p false
+    else
+        p true
     end
 end
-valid_date month, day, year
-
+contain_special 'testingAgain$#'
 
 
 
